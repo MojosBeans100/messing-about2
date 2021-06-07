@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+
+body {
+    margin: 0; 
+    padding: 0;
+    width: 100%; 
+    min-height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/pexels-alex-azabache-4039924.jpg');
+}
+
+#main-game-area {
+    /* top: 150px; */
+    font-family: 'Baloo Tammudu 2', cursive;
+    margin-top: 0;
+    position: relative;
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+@font-face{
+    font-family: 'customFont';
+    src: url('../fonts/Peignot.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+h1 {
+    margin-top: 20px;
+    font-family: customFont;
+    /* color: white; */
+    font-size: 100px;
+    text-shadow: -1px 1px 0 white,
+    1px 1px 0 white,
+   1px -1px 0 white;
+  -1px -1px 0 white;
+    text-align: center;
+    margin-bottom: 30px;
+    /* background-color: white; */
+}
+
+#difficulties-form {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    /* top: 20px; */
+    position: relative;
+    /* border: solid red; */
+    height: 10%;
+}
+
+.difficulties {
+    display: flex;
+    width: 25%;
+}
+
+p {
+    margin-top: 0;
+    top: 0;
+    position: relative;
+}
+
+#answer-div {
+    height: 70%;
+    /* border: solid steelblue; */
+}
+
+#question-div {
+    text-align: center;
+    /* border: solid purple; */
+    height: 20%;
+    word-spacing: 0.8em;
+}
+
+#question-word {
+    text-decoration: underline;
+    font-size: 30px;
+    color: orange;
+}
+
+#language {
+    text-transform: italic;
+}
+
+#answer-div {
+    width: 100%;
+    display: flex;
+    height: 250px;
+}
+
+#multiple-choice {
+    /* border: solid yellow; */
+    width: 50%;
+}
+
+#answer-tally {
+    width: 20%;
+    /* border: turquoise; */
+}
+
+#correct {
+    height: 50%;
+    margin: auto;
+    /* border: solid #008000; */
+    text-align: center;
+}
+
+#incorrect {
+    height: 50%;
+    margin: auto;
+    /* border: solid purple; */
+    text-align: center;
+}
+
+ul {
+    margin-top: 40px;
+    margin-left: 80px;
+    line-height: 40px;
+}
+
+#answer-form {
+    line-height: 45px;
+    margin-top: 35px;
+    margin-left: 70px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+input[type=radio] {
+    margin-right: 30px;
+}
+
+input[type=radio]:checked + label {
+    color: orange;
+  }
+
+#submit-div {
+    /* border: solid pink; */
+    width: 30%;
+    
+}
+
+#submit{
+    height: 50%;
+    width: 100%;
+    /* border: solid brown; */
+    margin: 0;
+    padding: 0;
+}
+
+#submit-button {
+    left: 20%;
+    top: 30%;
+    position: relative;
+    height: 30%;
+    width: 60%;
+    font-size: 20px;
+}
+
+#hints {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    width: 100%;
+    /* border: solid grey; */
+    font-size: 40px;
+}
+
+#hint-icon {
+    color: orange;
+    left: 40%;
+    top: 20%;
+    position: relative;
+}
+
+.toy-box {
+    height: 80px;
+    width: 80px; 
+    box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+.toy-box p {
+    font-size: 70px;
+    color: white;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#toy-box-1 {
+    background-color: rgb(187, 0, 0);
+    border: yellow solid 5px;
+}
+
+#toy-box-2 {
+    background-color: rgb(0, 121, 10);
+    border: rgb(47, 0, 255) solid 5px;
+}
+
+#toy-box-3 {
+    background-color: rgb(0, 0, 0);
+    border: rgb(255, 0, 0) solid 5px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/ca3d5ea09b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- main image background -->
+
+<body>
+
+    <h1>Un petit jeu francais</h1>
+
+    <!-- white game area in center of page -->
+    <div id="main-game-area">
+
+        <!-- select your difficulty level radio button form -->
+        <div>
+            <form id="difficulties-form">
+                <p class="difficulties">Select difficulty</p>
+                <input class="difficulties" type="radio" id="easy" name="difficulty" value="easy">
+                <label for="easy">Easy</label><br>
+                <input class="difficulties" type="radio" id="medium" name="difficulty" value="medium">
+                <label for="medium">Medium</label><br>
+                <input class="difficulties" type="radio" id="difficult" name="difficulty" value="difficult">
+                <label for="difficult">Difficult</label>
+            </form>
+        </div>
+
+        <!-- where the quiz question is asked -->
+        <div id="question-div">
+            <h2>Question: &nbsp What is <span id="question-word">to tidy</span> in <span id="language">French</span> ?</h2>
+        </div>
+
+        <!-- radio buttons form to answer multiple choice questions -->
+        <div id="answer-div">
+            <div id="multiple-choice">
+                <form id="answer-form">
+
+                    <input class="answers" type="radio" id="answer1" name="mc-answers" value="answer1">
+                    <label for="answer1">Ranger</label><br>
+                    <input class="answers" type="radio" id="answer2" name="mc-answers" value="answer2">
+                    <label for="answer2">Manger</label><br>
+                    <input class="answers" type="radio" id="answer3" name="mc-answers" value="answer3">
+                    <label for="answer3">Faire</label><br>
+                    <input class="answers" type="radio" id="answer4" name="mc-answers" value="answer4">
+                    <label for="answer4">Prendre</label>
+
+                </form>
+            </div>
+
+            <div id="answer-tally">
+                <div id="correct">
+                    <h3>Correct Answers:</h3>
+                    <p>0</p>
+                </div>
+                <div id="incorrect">
+                    <h3>Incorrect Answers:</h3>
+                    <p>0</p>
+                </div>
+            </div>
+
+            <!-- this div holds the hints - pops up and gives a hint if user is struggling - and submit button -->
+            <div id="submit-div">
+
+                <div id="hints">
+                    <i id="hint-icon" class="fas fa-question-circle"></i>
+                </div>
+
+                <div id="submit">
+                    <button type="button" id="submit-button">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="toy-box" id="toy-box-1"><p>U</p></div>
+    <div class="toy-box" id="toy-box-2"><p>N</p></div>
+    <div class="toy-box" id="toy-box-3"><p>P</p></div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
